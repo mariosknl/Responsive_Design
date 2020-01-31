@@ -69,7 +69,7 @@ header {
   padding: 0 4px;
 }
 
-#search{
+#search {
   position: relative;
   right: -62.5%;
   border-left: 1px solid;
@@ -97,4 +97,37 @@ header {
 
 .yellow-nav a {
   color: black;
+}
+
+.top-section-container {
+  background-color: aqua;
+  width: 100%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: (2fr, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.image1 {
+}
+
+.image2 {
+  grid-area: 1/2/2/3;
+}
+
+.image3 {
+  grid-area: 2/2/3/3;
+}
+
+.image1 img {
+  width: 100%;
+}
+
+.image2 img {
+  width: 70%;
+}
+
+.image3 img {
+  width: 70%;
 }
