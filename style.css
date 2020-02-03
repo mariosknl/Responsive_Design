@@ -736,25 +736,3 @@ main .latest-funding-container {
   position: relative;
   top: 73px;
 }
-
-.fundsContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.fundsContainer h4 {
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #ff4421;
-  padding: 5px 20px 5px 110px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.fundsContainer h5 {
-  background-color: #ffece8;
-  font-size: 16px;
-  color: #ffffff;
-  padding: 20px 50px 20px 80px;
-}
