@@ -509,8 +509,8 @@ main .latest-news-container h2:hover {
 }
 
 main .latest-funding-container {
-  background-color: aqua;
   width: 75%;
+  height: 390px;
   margin-left: 28px;
 }
 
@@ -525,9 +525,92 @@ main .latest-funding-container {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.latest-funding-container ul li a {
+  color: #ff4421;
+  border-right: 1px solid #ff4421;
+  padding-right: 12px;
 }
 
 .latest-funding-container .funding-list-container {
-  background-color: hotpink;
-  width: 80%;
+  width: 95%;
+  height: 84%;
+  display: flex;
+}
+
+.fundingRounds1 {
+  width: 37%;
+  height: 90%;
+  background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1163561604111204357%2FSJI1fL13.jpg&signature=a16ebd26d80d1ffbd243ff7fcd597771');
+  background-size: cover;
+  background-position: center top;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  margin-right: 14px;
+  z-index: 8;
+}
+
+/* .fundingRounds1 h4 {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ff4421;
+  padding: 5px 20px 5px 110px;
+  text-overflow: ellipsis;
+}
+
+.fundingRounds1 h5 {
+  background-color: #ffece8;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px 50px 20px ;
+} */
+
+.fundingRounds2 {
+  width: 37%;
+  height: 90%;
+  background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1160941468581879808%2FFDBUmWVJ.jpg&signature=0aa4db5bbafc29520907cf6308ad6b59');
+  background-size: cover;
+  background-position: center top;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  margin-right: 14px;
+  z-index: 8;
+}
+
+.fundingRounds3 {
+  width: 37%;
+  height: 90%;
+  margin-right: 14px;
+  position: relative;
+}
+
+.fundingRounds3 img {
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.fundsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.fundsContainer h4 {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ff4421;
+  padding: 5px 20px 5px 110px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.fundsContainer h5 {
+  background-color: #ffece8;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px 50px 20px 80px;
 }
