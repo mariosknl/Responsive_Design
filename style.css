@@ -97,7 +97,6 @@ header {
   background-color: rgb(254, 221, 50);
   align-items: center;
   font-size: 13px;
-  padding: 0 25px;
   width: 100%;
 }
 
@@ -108,8 +107,8 @@ header {
 main {
   width: 100%;
   overflow: hidden;
-  position: absolute;
-  top: 17%;
+  position: relative;
+  /* top: 17%; */
 }
 
 .top-section-container {
@@ -168,7 +167,7 @@ main {
   text-decoration: underline;
 }
 
-.top-section-container .image1 h1 {
+.top-section-container .image1 h2 {
   width: 60%;
   color: #ffffff;
   margin-left: 5px;
@@ -179,7 +178,7 @@ main {
   z-index: 2;
 }
 
-.top-section-container .image1 h1:hover {
+.top-section-container .image1 h2:hover {
   text-decoration: underline;
 }
 
@@ -344,7 +343,6 @@ main .latest-news-container h2:hover {
 }
 
 .latest-news-container .latestNews2 {
-  /* background-color: blue; */
   grid-area: 1 / 2 / 2 / 3;
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/youtube-1200-516x270.png');
   background-position: center top;
