@@ -1,0 +1,74 @@
+@media screen and (max-width: 767px) {
+  header .nav-logo {
+    width: 106px;
+    height: 43%;
+    background: linear-gradient(
+      to bottom right,
+      #c09,
+      #f42 85%
+    );
+    padding: 33px 20px;
+    position: relative;
+    right: 20px;
+    bottom: 10px;
+  }
+  .nav-logo img {
+    width: 66px;
+    height: 15px;
+  }
+
+  header .nav-top {
+    display: none;
+  }
+
+  .nav-top .left-list li a {
+    display: none;
+  }
+  .nav-top .right-list li a {
+    display: none;
+  }
+
+  #menu {
+    position: absolute;
+    right: 10px;
+    padding-left: 15px;
+    font-size: 24px;
+    color: #f42;
+  }
+
+  #search {
+    position: absolute;
+    left: 400px;
+    border-right: 1px solid;
+  }
+
+  .nav-mid li a {
+    display: none;
+  }
+
+  .yellow-nav a h3 {
+    position: relative;
+    left: 45%;
+  }
+
+  main .top-section-container {
+    grid-template-columns: 98%;
+    grid-template-rows: repeat(3, 20vh);
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 50%; */
+  }
+
+  .top-section-container .image1 {
+    grid-row: 1 / 2;
+  }
+  .top-section-container .image2 {
+    grid-row: 2 / 3;
+  }
+  .top-section-container .image3 {
+    grid-row: 3 / 4;
+  }
+}
