@@ -581,11 +581,14 @@ main .latest-funding-container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
 
 .articles {
   width: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .articles h2 {
@@ -595,64 +598,70 @@ main .latest-funding-container {
   padding-bottom: 10px;
 }
 
-.apps article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png');
-  background-size: 100%;
+.apps article .img-article-container {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 0;
-  padding-top: 31%;
 }
 
-.articles article header {
-  padding: 10px;
+.articles-grid-container .articles article {
+  position: relative;
+  height: 100%;
+}
+
+.articles header {
+  padding: 10px 10px 5px 10px;
   background: transparent
-    url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png');
+    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  position: absolute;
+  bottom: 69.9%;
+  display: flex;
+  align-items: end;
+  flex-flow: wrap;
 }
 
 .articles article header h5 {
   color: #fff;
   font-size: 13px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
+  font-weight: 500;
 }
 
 .articles article header h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .articles article header small {
   color: hsla(0, 0%, 100%, 0.6);
   padding-bottom: 3px;
+  font-size: 12px;
 }
 
 .latest-sub-article {
   width: 100%;
+  height: 96px;
   position: relative;
-  display: flex;
-  margin-bottom: 15px;
+  margin: 2px 0;
   background-color: rgba(255, 68, 34, 0.06);
-}
-
-.latest-sub-article a {
-  width: 58%;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
 }
 
 .latest-sub-article a img {
-  width: 100%;
-  float: right;
-  height: 100%;
+  width: 96px;
+  height: 96px;
 }
 
 .article-description {
-  padding: 10px 0 10px 10px;
-  float: left;
+  padding: 10px;
   color: orangered;
 }
 
@@ -667,8 +676,6 @@ main .latest-funding-container {
 }
 
 .articles article ul {
-  clear: both;
-  /* flex-direction: column; */
   list-style: disc;
   color: orangered;
   padding-left: 20px;
@@ -681,91 +688,71 @@ main .latest-funding-container {
 
 .articles article ul li a {
   color: #555;
-  line-height: 30px;
+  line-height: 24px;
+  font-size: 13px;
 }
 
-.gear article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2');
-  background-size: 100%;
+.gear article .img-article-container {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 -19px;
-  padding-top: 30%;
 }
 
-.tech article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/brain-1200x600.jpg');
-  background-size: 105%;
+.tech article .img-article-container {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/brain-1200x600.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 -3px;
-  padding-top: 30%;
 }
 
-.creative article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png');
-  background-size: 100%;
+.creative article .img-article-container {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 -19px;
-  padding-top: 30%;
 }
 
-.podium article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a');
-  background-size: 100%;
+.podium article .img-article-container {
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 -19px;
-  padding-top: 30%;
 }
 
-.insights article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-796x417.jpg');
-  background-size: 100%;
+.insights article .img-article-container {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-796x417.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 -3px;
-  padding-top: 30%;
 }
 
-.launch article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg');
-  background-size: 100%;
+.launch article .img-article-container {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 -4px;
-  padding-top: 30%;
 }
 
-.distract article {
-  position: relative;
-  max-width: 100%;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg');
-  background-size: 100%;
+.distract article .img-article-container {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  background-position: 0 100%;
+  padding-top: 50%;
   width: 100%;
-  background-position: 0 -3px;
-  padding-top: 30%;
 }
 
 /* Latest Deals Container */
