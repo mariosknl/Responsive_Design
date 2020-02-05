@@ -1,6 +1,7 @@
+/* Screen Resolution min-width:1024px */
+
 body {
   width: 100%;
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -22,12 +23,13 @@ header {
 
 .nav-top .left-list {
   display: flex;
-}
-
-.nav-top .left-list li {
-  display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.nav-top .left-list li,
+.nav-top .right-list li,
+.nav-mid ul li {
   padding: 0 4px;
 }
 
@@ -35,11 +37,10 @@ header {
   display: flex;
 }
 
-.nav-top .right-list li {
+.nav-top .right-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 4px;
 }
 
 .nav-top a {
@@ -54,6 +55,10 @@ header {
   color: white;
 }
 
+.nav-mid ul {
+  display: flex;
+}
+
 .nav-mid {
   display: flex;
   justify-content: flex-start;
@@ -64,23 +69,16 @@ header {
   padding: 0 20px;
 }
 
-.nav-mid ul {
-  display: flex;
-}
-
-.nav-mid ul li {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 4px;
-}
-
 #search {
   position: absolute;
-  left: 680px;
-  border-left: 1px solid;
+  right: 0;
+  border-left: 1px solid lightgrey;
   padding: 15px;
   font-size: medium;
+}
+
+#menu {
+  display: none;
 }
 
 .nav-mid a {
@@ -92,19 +90,21 @@ header {
 }
 
 .yellow-nav {
-  display: flex;
-  height: 28%;
+  width: 100%;
+  height: 3%;
   background-color: rgb(254, 221, 50);
-  align-items: center;
   font-size: 13px;
   width: 100%;
+  position: absolute;
+}
+
+.yellow-nav h3 {
+  padding: 8px 0 5px 25px;
 }
 
 .yellow-nav a {
   color: black;
 }
-
-/* Top Section Container */
 
 main {
   width: 100%;
@@ -112,7 +112,9 @@ main {
   position: relative;
 }
 
-.top-section-container {
+/* Top Section Container */
+
+main .top-section-container {
   width: 98%;
   height: 550px;
   display: grid;
@@ -127,7 +129,7 @@ main {
   grid-area: 1 / 1 / 3 / 2;
 }
 
-.image2 {  
+.image2 {
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -135,7 +137,14 @@ main {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.top-section-container .img-top {
+.top-section-container .image1 {
+  /* background-color: lime; */
+  /* position: relative; */
+}
+.top-section-container .image2 {
+  position: relative;
+}
+.top-section-container .image3 {
   position: relative;
 }
 
@@ -146,11 +155,11 @@ main {
 .top-section-container .image1 .img-top-section-container {
   background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a');
   background-size: cover;
-  background-position: 50%;
-  z-index: 1;
+  background-position: center top;
+  /* z-index: 1;
   cursor: pointer;
-  padding-top: 59%;
-  box-shadow: inset 0px 0px 100px 0px rgb(0, 0, 0);
+  padding-top: 59%; */
+  /* box-shadow: inset 0px 0px 100px 0px rgb(0, 0, 0); */
 }
 
 .top-section-container .image2 .img-top-section-container {
@@ -163,7 +172,7 @@ main {
   box-shadow: inset 0px 0px 100px 0px rgb(0, 0, 0);
 }
 
-.top-section-container .image3 .img-top-section-container  {
+.top-section-container .image3 .img-top-section-container {
   background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F10%2FApple-AirPods-Pro.jpg&signature=eeb60b2eb429f8a0afe01ba584eeebc9');
   background-position: 50%;
   background-size: cover;
@@ -176,37 +185,162 @@ main {
 .top-section-container .image1 .tnw-logo {
   position: absolute;
   background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg');
-  background-position: 50%;
-  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
   cursor: pointer;
-  width: 60%;
-  height: 25%;
+  width: 40%;
+  height: 15%;
   z-index: 5;
   top: 5%;
   left: 3%;
 }
 
-.top-section-container .img-top .text-top-section-container {
+.top-section-container .image1 .text-top-section-container {
   position: absolute;
-  bottom: 2%;
-  left: 2%;
-  padding-right: 10px;
+  top: 70%;
+  color: #fff;
+  left: 3%;
 }
 
-.top-section-container .img-top .text-top-section-container h4 a {
+.top-section-container
+  .image1
+  .text-top-section-container
+  a {
+  color: #fff;
+}
+
+.top-section-container
+  .image1
+  .text-top-section-container
+  h4 {
+  font-size: 20px;
+}
+
+.top-section-container
+  .image1
+  .text-top-section-container
+  h2 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.top-section-container
+  .image1
+  .text-top-section-container
+  p {
+  font-size: 12px;
+}
+
+.top-section-container .image1 small {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  color: #fff;
+}
+
+.top-section-container .image2 .text-top-section-container {
+  position: absolute;
+  top: 58%;
+  color: #fff;
+  left: 3%;
+}
+
+.top-section-container
+  .image2
+  .text-top-section-container
+  a {
+  color: #fff;
+}
+
+.top-section-container
+  .image2
+  .text-top-section-container
+  h4 {
+  font-size: 20px;
+}
+
+.top-section-container
+  .image2
+  .text-top-section-container
+  h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.top-section-container
+  .image2
+  .text-top-section-container
+  p {
+  font-size: 12px;
+}
+
+.top-section-container .image3 .text-top-section-container {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  left: 3%;
+}
+
+.top-section-container
+  .image3
+  .text-top-section-container
+  a {
+  color: #fff;
+}
+
+.top-section-container
+  .image3
+  .text-top-section-container
+  h4 {
+  font-size: 20px;
+}
+
+.top-section-container
+  .image3
+  .text-top-section-container
+  h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.top-section-container
+  .image3
+  .text-top-section-container
+  p {
+  font-size: 12px;
+}
+
+/* .top-section-container
+  .img-top
+  .text-top-section-container
+  h4
+  a {
   color: #ffffff;
   margin-left: 5px;
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 3px;
-}
+} */
 
-.top-section-container .img-top .text-top-section-container h4 a:hover {
+/* .top-section-container
+  .img-top
+  .text-top-section-container
+  h4
+  a:hover {
   text-decoration: none;
-}
+} */
 
-.top-section-container .img-top .text-top-section-container h2 a {
+/* .top-section-container
+  .img-top
+  .text-top-section-container
+  h2
+  a {
   color: #ffffff;
   margin-left: 5px;
   font-size: 42px;
@@ -214,11 +348,18 @@ main {
   padding-bottom: 5px;
 }
 
-.top-section-container .img-top .text-top-section-container h2 a:hover {
+.top-section-container
+  .img-top
+  .text-top-section-container
+  h2
+  a:hover {
   text-decoration: none;
 }
 
-.top-section-container .img-top .text-top-section-container p {
+.top-section-container
+  .img-top
+  .text-top-section-container
+  p {
   color: #ffffff;
   font-size: 14px;
   margin-left: 7px;
@@ -227,7 +368,11 @@ main {
   padding: 10px 0;
 }
 
-.top-section-container .img-top .text-top-section-container p a {
+.top-section-container
+  .img-top
+  .text-top-section-container
+  p
+  a {
   color: #ffffff;
   font-size: 14px;
   margin-left: 7px;
@@ -236,11 +381,18 @@ main {
   padding: 10px 0;
 }
 
-.top-section-container .img-top .text-top-section-container p a:hover {
+.top-section-container
+  .img-top
+  .text-top-section-container
+  p
+  a:hover {
   opacity: 1;
 }
 
-.top-section-container .img-top .text-top-section-container small {
+.top-section-container
+  .img-top
+  .text-top-section-container
+  small {
   color: #ffffff;
   opacity: 0.6;
   font-size: 12px;
@@ -250,14 +402,20 @@ main {
   padding: 10px;
 }
 
-.top-section-container .img-top .text-top-section-container small:hover {
+.top-section-container
+  .img-top
+  .text-top-section-container
+  small:hover {
   cursor: text;
 }
 
-.top-section-container .text-top .text-top-section-container .text2 {
+.top-section-container
+  .text-top
+  .text-top-section-container
+  .text2 {
   font-size: 24px;
   color: white;
-}
+} */
 
 /* Latest News Container */
 
@@ -285,7 +443,9 @@ main .latest-news-title:hover {
   cursor: pointer;
 }
 
-.latest-news-container .latestNews .img-latest-news-container {
+.latest-news-container
+  .latestNews
+  .img-latest-news-container {
   background-position: 0 100%;
   background-size: cover;
   background-repeat: repeat;
@@ -343,7 +503,8 @@ main .latest-news-title:hover {
 main .latest-funding-container {
   width: 75%;
   height: 390px;
-  margin-left: 28px;
+  margin-top: 40px;
+  margin-left: 137px;
 }
 
 .latest-funding-container h3 {
@@ -599,7 +760,7 @@ main .latest-funding-container {
 }
 
 .apps article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png");
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -615,7 +776,7 @@ main .latest-funding-container {
 .articles header {
   padding: 10px 10px 5px 10px;
   background: transparent
-    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png");
+    url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -657,7 +818,9 @@ main .latest-funding-container {
 
 .latest-sub-article a img {
   width: 96px;
-  height: 96px;
+  height: 91px;
+  position: relative;
+  top: 5px;
 }
 
 .article-description {
@@ -693,7 +856,7 @@ main .latest-funding-container {
 }
 
 .gear article .img-article-container {
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2");
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -702,7 +865,7 @@ main .latest-funding-container {
 }
 
 .tech article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/brain-1200x600.jpg");
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/brain-1200x600.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -711,7 +874,7 @@ main .latest-funding-container {
 }
 
 .creative article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png");
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -720,7 +883,7 @@ main .latest-funding-container {
 }
 
 .podium article .img-article-container {
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a");
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -729,7 +892,7 @@ main .latest-funding-container {
 }
 
 .insights article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-796x417.jpg");
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-796x417.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -738,7 +901,7 @@ main .latest-funding-container {
 }
 
 .launch article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg");
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -747,7 +910,7 @@ main .latest-funding-container {
 }
 
 .distract article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg");
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 100%;
