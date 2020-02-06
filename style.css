@@ -314,7 +314,6 @@ main {
   width: 100%;
   height: 75vh;
   position: relative;
-
   display: grid;
   grid-template-columns: repeat(4, 24%);
   grid-template-rows: repeat(2, 50%);
@@ -460,7 +459,6 @@ main {
   text-align: left;
   padding: 15px;
   line-height: 40px;
-  
 }
 
 .fundingRounds ul li a {
@@ -534,7 +532,7 @@ article .img-article-container {
 .articles header {
   padding: 10px 10px 5px 10px;
   background: transparent
-    url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png");
+    url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -573,8 +571,8 @@ article .img-article-container {
 }
 
 .latest-sub-article .item-img {
-  width: 30%;
-  background-size: contain;
+  width: 40%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   flex: none;
@@ -621,56 +619,45 @@ article .img-article-container {
 
 .latest-deals-container {
   width: 100%;
-  margin: 0 auto;
   padding-bottom: 30px;
-}
-
-.latest-deals-container header {
-  justify-content: space-between;
-  align-content: center;
-}
-
-.latest-deals-container h2 {
-  float: left;
-  line-height: 32px;
-  padding: 20px 0;
+  position: relative;
 }
 
 .latest-deals-container h2 a {
-  font-weight: bolder;
-  color: orangered;
-  font-size: x-large;
+  color: #f42;
+  font-size: 26px;
+  position: relative;
+  bottom: 5px;
+  left: 0;
 }
 
-.latest-deals-container .more {
-  font-weight: normal;
-  color: orangered;
-  font-size: medium;
-  float: right;
-  line-height: 32px;
-  padding: 20px 0;
+.latest-deals-container h6 a {
+  color: #f42;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.latest-deals-container .latest-deals-grid {
+.latest-deals-grid {
   width: 100%;
+  height: 70vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-bottom: 20px;
 }
 
-.latest-deals-container .latest-deals-grid .latest-deal {
+.latest-deal {
   position: relative;
   max-width: 100%;
-  /* height: 100%; */
 }
 
 .img-container {
   background-size: cover;
   width: 100%;
-  /* height: 100%; */
+  height: 50%;
   background-position: center;
-  padding-top: 74.5%;
 }
 
 .deal-description {
@@ -680,11 +667,11 @@ article .img-article-container {
   padding-top: 12px;
 }
 
-.latest-deal .deal-description a {
+.deal-description a {
   color: black;
 }
 
-.latest-deal .deal-description a h4 {
+.deal-description a h4 {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 0;
@@ -703,7 +690,7 @@ article .img-article-container {
   padding-left: 4px;
 }
 
-.latest-deal .more-container {
+.more-container {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg');
   position: absolute;
   right: 0;
@@ -725,16 +712,87 @@ article .img-article-container {
   text-align: center;
 }
 
-.more-container-2 {
+/* End of Latest Deals Section */
+
+/* Footer Section */
+
+.footer-page {
+  text-align: center;
+  position: relative;
+}
+
+.footer-top {
+  padding: 3em 0 2em;
+  background: #131313;
+}
+
+.wrapper-footer-top {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-social {
+  margin-bottom: 15px;
+}
+
+.footer-social li {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.social-icon {
+  background: #333;
+  color: white;
+  border-radius: 50%;
   display: block;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg');
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 5;
-  width: 80px;
-  height: 80px;
-  visibility: hidden;
+  height: 40px;
+  width: 40px;
+  padding: 9px 0 0 2px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.footer-links li {
+  margin: 0 6px;
+  font-weight: medium;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-links li a {
+  color: #aaa;
+}
+
+.footer-bottom {
+  padding: 3em 0;
+  background: black;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.wrapper-footer-bottom {
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tnw-logo {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+.wrapper-footer-bottom p b {
+  color: #f42;
+  font-weight: bold;
+}
+
+.sp-logo {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
 }
