@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Navigation Bars */
 
 header {
@@ -360,9 +365,8 @@ main {
 
 .latest-funding-container {
   width: 100%;
-  height: 50vh;
-  background-color: aqua;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .funding-header ul {
@@ -380,6 +384,7 @@ main {
 
 .funding-header ul li a {
   color: #f42;
+  font-size: 17px;
 }
 
 .funding-header ul li:nth-child(2) {
@@ -391,10 +396,8 @@ main {
 
 .funding-list-container {
   width: 100%;
-  height: 30vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100%;
   gap: 20px;
 }
 
@@ -404,9 +407,10 @@ main {
 
 .fundingRounds {
   width: 100%;
-  height: 100%;
   background-color: lightgray;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .fundingRounds img {
@@ -418,14 +422,67 @@ main {
 
 .fundingRounds h4 {
   background-color: #f42;
-  position: absolute;
-  top: 0;
   width: 100%;
-  height: 10%;
   text-align: center;
   padding-top: 5px;
+  line-height: 40px;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
-.fundingRounds h5 {
+.fundings-description {
+  background-color: #ffece8;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0 10px 85px;
+  line-height: 20px;
 }
+
+.fundings-description h5 a {
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+}
+
+.fundings-description h6 a {
+  font-size: 12px;
+  color: gray;
+  font-weight: 300;
+}
+
+.fundingRounds ul {
+  background-color: #fffaf9;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  line-height: 40px;
+  
+}
+
+.fundingRounds ul li a {
+  font-size: 15px;
+  word-spacing: 4px;
+}
+
+.fundigs-ending {
+  background-color: #fffaf9;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 15px;
+  line-height: 20px;
+  word-spacing: 2px;
+  border-top: 1px solid #f42;
+}
+
+.fundigs-ending p {
+  font-size: 14px;
+}
+
+.fundigs-ending small a {
+  font-size: 12px;
+  color: gray;
+}
+
 /* End of Funding List Set Up */
