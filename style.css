@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 a {
@@ -535,7 +538,7 @@ article .img-article-container {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 66%;
+  bottom: 70%;
   display: flex;
   align-items: end;
   flex-flow: wrap;
@@ -587,6 +590,7 @@ article .img-article-container {
 .article-description h6 {
   font-weight: 500;
   padding-bottom: 3px;
+  font-size: 13px;
 }
 
 .article-description p {
@@ -610,68 +614,5 @@ article .img-article-container {
   line-height: 24px;
   font-size: 13px;
 }
-
-/* .gear article .img-article-container {
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  padding-top: 50%;
-  width: 100%;
-} */
-
-/* .tech article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/brain-1200x600.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  padding-top: 50%;
-  width: 100%;
-} */
-
-/* .creative article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  padding-top: 50%;
-  width: 100%;
-} */
-
-/* .podium article .img-article-container {
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  padding-top: 50%;
-  width: 100%;
-} */
-
-/* .insights article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-796x417.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  padding-top: 50%;
-  width: 100%;
-} */
-
-/* .launch article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  padding-top: 50%;
-  width: 100%;
-} */
-
-/* .distract article .img-article-container {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  padding-top: 50%;
-  width: 100%;
-} */
 
 /* End of Article Section */
