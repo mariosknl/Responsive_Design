@@ -322,35 +322,35 @@ header {
 
 /* Images of Articles */
 
-.img1-top{
+.img1-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/youtube-1200-516x270.png');
 }
 
-.img2-top{
+.img2-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/youtube-1200-516x270.png');
 }
 
-.img3-top{
+.img3-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/04/wii.jpg');
 }
 
-.img4-top{
+.img4-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-513x270.png');
 }
 
-.img5-top{
+.img5-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/newfakenews1200-516x270.png');
 }
 
-.img6-top{
+.img6-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/stellar-blockchain-down-cryptocurrency-decentralized-478x270.jpg');
 }
 
-.img7-top{
+.img7-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/header-image-tim-cook-Apple-financials-1-516x270.png');
 }
 
-.img8-top{
+.img8-top {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Untitled-design101-516x270.png');
 }
 
@@ -645,6 +645,7 @@ main {
 .img8-subArticle {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Snag_2267466a.png');
 }
+
 /* End of Articles Images */
 
 /* Articles Text Set up */
@@ -686,7 +687,6 @@ article .img-article-container {
   bottom: 66%;
   display: flex;
   flex-direction: column;
-  
 }
 
 .articles header h5 {
@@ -757,7 +757,7 @@ article .img-article-container {
 
 /* End of Article Text Set Up */
 
-/* Start of Latest Deals Section Container*/
+/* Start of Latest Deals Section Container */
 
 .latest-deals-container {
   width: 100%;
