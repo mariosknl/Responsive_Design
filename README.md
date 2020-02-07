@@ -20,6 +20,7 @@ Media Queries for: 1) max-width: 767px,
 - Github: [@mariosknl](https://github.com/mariosknl)
 - Twitter: [@mariosknl](https://twitter.com/MariosKnl)
 - Linkedln: [marios-kanellopoulos](https://www.linkedin.com/in/marios-kanellopoulos-a99332181/)
+- [![Mariosknl is available for hire!](http://hireable.me/mariosknl)](http://hireable.me/p/mariosknl)
 
 👤 Sergio Perdomo
 - Github: [@sddoe](https://github.com/sddoe)
