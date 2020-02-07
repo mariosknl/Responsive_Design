@@ -320,6 +320,42 @@ header {
 
 /* End of Article1 Text */
 
+/* Images of Articles */
+
+.img1-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/youtube-1200-516x270.png');
+}
+
+.img2-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/youtube-1200-516x270.png');
+}
+
+.img3-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/04/wii.jpg');
+}
+
+.img4-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-513x270.png');
+}
+
+.img5-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/newfakenews1200-516x270.png');
+}
+
+.img6-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/stellar-blockchain-down-cryptocurrency-decentralized-478x270.jpg');
+}
+
+.img7-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/header-image-tim-cook-Apple-financials-1-516x270.png');
+}
+
+.img8-top{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Untitled-design101-516x270.png');
+}
+
+/* End Images of Articles */
+
 /* Text Article2 & Article3 */
 
 .top-section-container .article2 .article2-text,
@@ -360,7 +396,7 @@ header {
 
 /* Main Container */
 main {
-  width: 80%;
+  width: 90%;
   height: 100%;
   position: relative;
   margin: 0 auto;
@@ -527,7 +563,7 @@ main {
 
 /* End of Funding List Set Up */
 
-/* Start of Articles Section */
+/* Start of Articles Section Container */
 
 .articles-container {
   width: 100%;
@@ -541,6 +577,77 @@ main {
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
+
+/* End of Articles Section Container  */
+
+/* Start of Articles Images */
+
+.img1-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png');
+}
+
+.img1-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Google-translate.png');
+}
+
+.img2-article {
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2');
+}
+
+.img2-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Apple-AirPods-Pro.jpg');
+}
+
+.img3-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/brain-1200x600.jpg');
+}
+
+.img3-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/ring-amazon-video-customer.jpg');
+}
+
+.img4-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png');
+}
+
+.img4-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/instagram-photoshop-hide-misinformation.jpg');
+}
+
+.img5-article {
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a');
+}
+
+.img5-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Untitled-design44.png');
+}
+
+.img6-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-796x417.jpg');
+}
+
+.img6-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/stellar-blockchain-down-cryptocurrency-decentralized.jpg');
+}
+
+.img7-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg');
+}
+
+.img7-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Press-Conference-with-Eric-Esrailian-Alexis-Ohanian-Hakob-Arshakyan-Yervant-Zorian-and-Serj-Tankian-hed.jpg');
+}
+
+.img8-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg');
+}
+
+.img8-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Snag_2267466a.png');
+}
+/* End of Articles Images */
+
+/* Articles Text Set up */
 
 .articles {
   width: 100%;
@@ -576,10 +683,11 @@ article .img-article-container {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 70%;
+  /* bottom: 40%; */
+  
   display: flex;
-  align-items: end;
-  flex-flow: wrap;
+  
+  
 }
 
 .articles article header h5 {
@@ -648,9 +756,9 @@ article .img-article-container {
   padding-left: 20px;
 }
 
-/* End of Article Section */
+/* End of Article Text Set Up */
 
-/* Start of Latest Deals Section */
+/* Start of Latest Deals Section Container*/
 
 .latest-deals-container {
   width: 100%;
@@ -667,6 +775,8 @@ article .img-article-container {
   margin-bottom: 20px;
 }
 
+/* End of Latest Deals Section Container */
+
 .latest-deal {
   position: relative;
   max-width: 100%;
@@ -678,6 +788,41 @@ article .img-article-container {
   height: 50%;
   background-position: center;
 }
+
+/* Images for Latest Deals Section */
+.img1-deal {
+  background-image: url(https://cdnp0.stackassets.com/3d28a01310d47a9ece38eb1a189790944b8e512e/store/bd912e50369c037674603acf0ef1a582b658ef72662651d6eab3d7aa657e/sale_25558_primary_image.jpg);
+}
+
+.img2-deal {
+  background-image: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
+}
+
+.img3-deal {
+  background-image: url(https://cdnp0.stackassets.com/a875072fa31f35279ce85438b376249c54eca996/store/8534f1826bec31d741297d74ee8a30edc0f492f8f74cd08aa4ed0103d42a/sale_14523_primary_image.jpg);
+}
+
+.img4-deal {
+  background-image: url(https://cdnp0.stackassets.com/a006d74a4214b0eb32c6ce78b158f01b3d871514/store/9dda482d6249c0add53c47b9b22ade2e3d22916d41ee83c217d468265c6f/sale_25287_primary_image.jpg);
+}
+
+.img5-deal {
+  background-image: url(https://cdnp1.stackassets.com/b84071b94151b0a50465135f5b203e5839a98736/store/327a0734b985e095e3ec81f34dc15ab2cebbd59d9191662bbd25a329cc11/sale_25559_primary_image.jpg);
+}
+
+.img6-deal {
+  background-image: url(https://cdnp3.stackassets.com/ba7cb2479d7bb8b5a7fecebb6af74ad77f9f74fa/store/c350066a7652411d43ac5e6a9b3caf8c8aaec349093c09728483b211ca82/sale_19370_primary_image.jpg);
+}
+
+.img7-deal {
+  background-image: url(https://cdnp3.stackassets.com/421ab0b04c84801af8a4f51ece880298388bd127/store/16cea4d1381f08ca8c02de9dd2d0fabc10f1fdeae203d89b6f66092ce3e6/sale_25441_primary_image.jpg);
+}
+
+.img8-deal {
+  background-image: url(https://cdnp3.stackassets.com/a63f9a918b821c95e798a8a68ea959724b33b7f3/store/2730630ad405564dff3d69229e3fac86b328dee912982179d47815ed0e30/sale_22289_primary_image.jpg);
+}
+
+/* End of Images for Latest Deals Section */
 
 .deal-description {
   word-wrap: break-word;
