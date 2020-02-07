@@ -1,0 +1,71 @@
+@media only screen and (min-width: 1024px) {
+  /* Navbar Section */
+
+  .yellow-nav {
+    display: none;
+  }
+
+  /* Top Section Container */
+  .top-section-container .article1 .article-text {
+    position: absolute;
+    top: 75%;
+  }
+
+  .article-heading {
+    font-size: 14px;
+  }
+
+  .article-content {
+    font-size: 24px;
+  }
+
+  .top-section-container .article2 .article2-text,
+  .top-section-container .article3 .article2-text {
+    top: 60%;
+  }
+
+  .article2-heading {
+    font-size: 16px;
+  }
+
+  .article2-content {
+    font-size: 18px;
+  }
+  /* End of Top Section Container */
+
+  /* Main Container */
+  main {
+    width: 95%;
+  }
+  /* End of Main Container */
+
+  /* Start of last funding Rounds */
+
+  .main-container #latest-funding-title {
+    margin-top: 50px;
+  }
+
+  .fundingRounds h4 {
+    padding-right: 20px;
+    height: 100%;
+  }
+  .fundings-description {
+    padding-right: 10px;
+  }
+
+  .fundingRounds ul li a {
+    font-size: 12px;
+  }
+
+  .fundigs-ending p {
+    font-size: 10px;
+  }
+
+  /* Articles Section */
+  article .img-article-container {
+    background-size: 100% 100%;
+  }
+  .articles header {
+    bottom: 75%;
+  }
+}
