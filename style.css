@@ -513,7 +513,7 @@ main {
 }
 
 .fundingRounds img {
-  width: 25%;
+  width: 22%;
   margin: 10px 10px;
   position: absolute;
   z-index: 5;
@@ -683,14 +683,13 @@ article .img-article-container {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
-  /* bottom: 40%; */
-  
+  bottom: 66%;
   display: flex;
-  
+  flex-direction: column;
   
 }
 
-.articles article header h5 {
+.articles header h5 {
   color: #fff;
   font-size: 13px;
   padding-bottom: 2px;
