@@ -5,10 +5,14 @@
     display: none;
   }
 
+  .nav-mid {
+    padding: 15px 20px;
+  }
+
   /* Top Section Container */
   .top-section-container .article1 .article-text {
     position: absolute;
-    top: 75%;
+    top: 82%;
   }
 
   .article-heading {
@@ -21,7 +25,7 @@
 
   .top-section-container .article2 .article2-text,
   .top-section-container .article3 .article2-text {
-    top: 60%;
+    top: 68%;
   }
 
   .article2-heading {
@@ -67,5 +71,17 @@
   }
   .articles header {
     bottom: 75%;
+  }
+
+  .articles article h5 {
+    font-size: 11px;
+  }
+
+  .articles article h4 {
+    font-size: 16px;
+  }
+  
+  .articles article small {
+    font-size: 10px;
   }
 }
