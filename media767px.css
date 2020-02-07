@@ -25,18 +25,21 @@
     gap: 10px;
     margin-top: 58px;
   }
+
   .article1 {
     grid-area: 1 / 1 / 2 / 2;
     -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     -moz-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
   }
+
   .article2 {
     grid-area: 2 / 1 / 3 / 2;
     -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     -moz-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
   }
+
   .article3 {
     grid-area: 3 / 1 / 4 / 2;
     -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
@@ -48,6 +51,7 @@
     position: absolute;
     top: 60%;
   }
+
   .article-heading {
     font-size: 14px;
   }
@@ -59,6 +63,7 @@
   .author {
     left: 1px;
   }
+
   .date {
     display: none;
   }
@@ -98,6 +103,7 @@
     width: 95%;
     top: 60%;
   }
+
   .top-section-container .article2 .article2-text {
     top: 70%;
   }
@@ -156,6 +162,10 @@
     margin: 10px 0;
   }
 
+  .fundigs-ending small a {
+    font-size: 10px;
+  }
+
   .funding-header ul li a {
     padding: 10px 0;
     font-size: 14px;
@@ -166,17 +176,20 @@
   }
 
   /* Funding List Container */
+
   .funding-list-container {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
   }
+
   /* End Funding List Container */
 
   /* Funding List Container Img */
   .fundingRounds img {
     width: 8%;
   }
+
   /* End of Funding List Container Img */
 
   /* Funding List Set Up */
@@ -202,9 +215,6 @@
     font-size: 10px;
   }
 
-  .fundigs-ending small a {
-    font-size: 10px;
-  }
   /* End of Funding List Set Up */
 
   /* latest Fundings */
@@ -241,15 +251,15 @@
     height: 80%;
   }
 
+  .deal-description {
+    display: flex;
+    flex-direction: row;
+  }
+
   main .latest-deals-grid .deal-description {
     width: 80%;
     left: 15%;
     bottom: 98%;
-  }
-
-  .deal-description {
-    display: flex;
-    flex-direction: row;
   }
 
   .more-container {

@@ -35,12 +35,14 @@
   .article2-content {
     font-size: 18px;
   }
+
   /* End of Top Section Container */
 
   /* Main Container */
   main {
     width: 95%;
   }
+
   /* End of Main Container */
 
   /* Start of last funding Rounds */
@@ -53,6 +55,7 @@
     padding-right: 20px;
     height: 100%;
   }
+
   .fundings-description {
     padding-right: 10px;
   }
@@ -69,6 +72,7 @@
   article .img-article-container {
     background-size: 100% 100%;
   }
+
   .articles header {
     bottom: 75%;
   }
@@ -80,7 +84,7 @@
   .articles article h4 {
     font-size: 16px;
   }
-  
+
   .articles article small {
     font-size: 10px;
   }

@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .nav-mid {
     padding: 25px 20px;
   }
@@ -17,7 +17,8 @@
     position: absolute;
   }
 
-  .top-section-container .article2 .article2-text, .top-section-container .article3 .article2-text {
+  .top-section-container .article2 .article2-text,
+  .top-section-container .article3 .article2-text {
     top: 55%;
   }
 
