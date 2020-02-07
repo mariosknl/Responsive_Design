@@ -1,0 +1,84 @@
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .nav-mid .logo-top {
+    display: block;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav-mid {
+    padding: 25px 20px;
+  }
+
+  .nav-mid ul {
+    left: 108px;
+    position: absolute;
+  }
+
+  .top-section-container .article2 .article2-text, .top-section-container .article3 .article2-text {
+    top: 55%;
+  }
+
+  .top-section-container .article1 .article-text {
+    top: 71%;
+  }
+
+  .article1 .date,
+  .article1 .logo {
+    display: none;
+  }
+
+  main {
+    width: 96%;
+  }
+
+  .latest-news-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 21px;
+    margin-bottom: 55px;
+  }
+
+  .latest-news-title {
+    margin-top: 60px;
+  }
+
+  .latest-news-text-container h3 {
+    line-height: 20px;
+  }
+
+  .latest-news-container .ln-img {
+    height: 65%;
+  }
+
+  .funding-header ul {
+    right: 9px;
+    padding: 16px 0;
+    justify-content: flex-start;
+    bottom: 0;
+  }
+
+  .articles-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .articles header {
+    bottom: 58%;
+  }
+
+  .latest-sub-article .item-img {
+    width: 25%;
+  }
+
+  .latest-deals-grid {
+    height: 104vh;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .img-container {
+    height: 76%;
+  }
+}

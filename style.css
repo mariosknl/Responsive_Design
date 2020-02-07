@@ -14,6 +14,10 @@ a {
   color: black;
 }
 
+.top-section {
+  display: none;
+}
+
 /* Navigation Bars */
 
 header {
