@@ -91,6 +91,19 @@
     line-height: 25px;
   }
 
+  .fundigs-ending p a {
+    font-size: 12px;
+  }
+
+  .fundigs-ending small a {
+    font-size: 12px;
+  }
+
+  .fundingRounds ul li,
+  .fundingRounds ul li a {
+    font-size: 13px;
+  }
+
   .funding-header ul li:nth-child(2) {
     border: none;
   }
@@ -106,19 +119,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .fundingRounds ul li,
-  .fundingRounds ul li a {
-    font-size: 13px;
-  }
-
-  .fundigs-ending p a {
-    font-size: 12px;
-  }
-
-  .fundigs-ending small a {
-    font-size: 12px;
   }
 
   .articles-grid-container {
