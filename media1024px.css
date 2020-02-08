@@ -12,7 +12,18 @@
   /* Top Section Container */
   .top-section-container .article1 .article-text {
     position: absolute;
-    top: 77%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+  }
+
+  .author {
+    left: 31px;
+    bottom: 15px;
   }
 
   .article-heading {
@@ -25,7 +36,18 @@
 
   .top-section-container .article2 .article2-text,
   .top-section-container .article3 .article2-text {
-    top: 60%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 25px;
+  }
+
+  .author2 {
+    left: 26px;
+    bottom: 10px;
   }
 
   .article2-heading {
@@ -51,6 +73,10 @@
     width: 95%;
   }
 
+  .latest-news-title {
+    margin-top: 40px;
+  }
+
   /* End of Main Container */
 
   /* Start of last funding Rounds */
@@ -59,9 +85,17 @@
     margin-top: 50px;
   }
 
+  .funding-header ul {
+    bottom: 0;
+    padding: 15px 0;
+    left: -9px;
+    justify-content: flex-start;
+  }
+
   .fundingRounds h4 {
-    padding-right: 20px;
-    height: 100%;
+    font-size: 14px;
+    padding-left: 85px;
+    text-align: left;
   }
 
   .fundings-description {
@@ -77,12 +111,9 @@
   }
 
   /* Articles Section */
-  article .img-article-container {
+  .img-text .img-article-container {
     background-size: 100% 100%;
-  }
-
-  .articles header {
-    bottom: 73%;
+    padding-top: 65%;
   }
 
   .articles header h5 {
@@ -109,5 +140,18 @@
   .article-description p {
     line-height: 13px;
     font-weight: 500;
+  }
+
+  .latest-deals-container .latest-deals-grid {
+    height: 50vh;
+  }
+
+  .latest-deals-container h2 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .latest-deal .img-container {
+    height: 70%;
   }
 }

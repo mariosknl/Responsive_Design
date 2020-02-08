@@ -124,10 +124,11 @@ header {
 
 .latest-deals-container h6 a {
   color: #f42;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   top: 0;
   right: 0;
+  font-weight: normal;
 }
 
 .footer-links li a {
@@ -663,6 +664,11 @@ main {
   padding-bottom: 10px;
 }
 
+.img-text {
+  position: relative;
+  width: 100%;
+}
+
 article .img-article-container {
   background-size: cover;
   background-repeat: no-repeat;
@@ -676,7 +682,7 @@ article .img-article-container {
   height: 100%;
 }
 
-.articles header {
+.img-text header {
   padding: 10px 10px 5px 10px;
   background:
     transparent
@@ -684,7 +690,9 @@ article .img-article-container {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 66%;
+  bottom: 0;
+  right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
 }

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) and (min-width: 481px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .nav-top {
     display: none;
   }
@@ -25,21 +25,18 @@
     gap: 10px;
     margin-top: 58px;
   }
-
   .article1 {
     grid-area: 1 / 1 / 2 / 2;
     -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     -moz-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
   }
-
   .article2 {
     grid-area: 2 / 1 / 3 / 2;
     -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     -moz-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
     box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
   }
-
   .article3 {
     grid-area: 3 / 1 / 4 / 2;
     -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
@@ -55,9 +52,8 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 15px;
+    padding: 7px;
   }
-
   .article-heading {
     font-size: 14px;
   }
@@ -67,10 +63,8 @@
   }
 
   .author {
-    left: 16px;
-    bottom: 10px;
+    left: 8px;
   }
-
   .date {
     display: none;
   }
@@ -114,12 +108,11 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 15px;
+    padding: 7px;
   }
 
   .author2 {
-    left: 16px;
-    bottom: 10px;
+    left: 8px;
   }
 
   .article2-heading {
@@ -134,7 +127,7 @@
 
   /* latest news */
   main {
-    width: 97%;
+    width: 95%;
   }
 
   main .latest-news-container {
@@ -143,12 +136,12 @@
     grid-template-rows: repeat(8, 1fr);
     gap: 10px;
     margin-bottom: 40px;
-    padding-left: 10px;
+    height: 105vh;
   }
 
   main .latest-news-container .ln-img {
-    width: 10%;
-    height: 85%;
+    width: 21%;
+    height: 80%;
   }
 
   .latest-news-text-container {
@@ -162,7 +155,12 @@
   }
 
   .latest-news-text-container h3 {
-    line-height: 13px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .latest-news-text-container small {
+    font-size: 12px;
   }
 
   .ln {
@@ -187,14 +185,6 @@
     margin: 10px 0;
   }
 
-  .fundigs-ending small a {
-    font-size: 12px;
-  }
-
-  .funding-header ul li {
-    line-height: 25px;
-  }
-
   .funding-header ul li a {
     padding: 10px 0;
     font-size: 14px;
@@ -205,25 +195,17 @@
   }
 
   /* Funding List Container */
-
   .funding-list-container {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
   }
-
   /* End Funding List Container */
 
   /* Funding List Container Img */
   .fundingRounds img {
-    width: 8%;
+    width: 19%;
   }
-
-  .fundigs-ending {
-    display: flex;
-    flex-direction: row;
-  }
-
   /* End of Funding List Container Img */
 
   /* Funding List Set Up */
@@ -247,15 +229,21 @@
   }
 
   .fundigs-ending p {
-    font-size: 12px;
-    padding-right: 5px;
+    font-size: 10px;
   }
 
+  .fundigs-ending small a {
+    font-size: 10px;
+  }
   /* End of Funding List Set Up */
 
   /* latest Fundings */
 
   /* Articles Section */
+
+  .img-article-container {
+    padding-top: 57%;
+  }
 
   .articles-grid-container {
     grid-template-columns: 100%;
@@ -263,7 +251,7 @@
   }
 
   .latest-sub-article .item-img {
-    width: 12%;
+    width: 27%;
   }
 
   /* End of Articles Section */
@@ -271,11 +259,16 @@
   /* Latest Deals Section */
 
   .latest-deals-container {
-    margin-top: 20px;
+    height: 95vh;
   }
 
   .latest-deals-container h2 {
-    padding-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .latest-deals-container h6 a {
+    font-size: 14px;
   }
 
   .latest-deals-grid {
@@ -287,16 +280,28 @@
   }
 
   main .latest-deals-grid .img-container {
-    width: 10%;
-    height: 80%;
+    width: 25%;
+    height: 100%;
   }
 
   main .latest-deals-grid .deal-description {
-    width: 80%;
-    left: 15%;
-    bottom: 98%;
+    width: 75%;
+    left: 26%;
+    bottom: 122%;
     display: flex;
     flex-direction: column;
+  }
+
+  .deal-description a h4 {
+    font-size: 14px;
+  }
+
+  .prices .line-through {
+    font-size: 12px;
+  }
+
+  .prices .current-price {
+    font-size: 14px;
   }
 
   .more-container {

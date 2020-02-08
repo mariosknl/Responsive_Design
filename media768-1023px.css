@@ -19,11 +19,34 @@
 
   .top-section-container .article2 .article2-text,
   .top-section-container .article3 .article2-text {
-    top: 55%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+  }
+
+  .author2 {
+    left: 16px;
+    bottom: 10px;
   }
 
   .top-section-container .article1 .article-text {
-    top: 71%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+  }
+
+  .author {
+    left: 22px;
+    bottom: 15px;
   }
 
   .article1 .date,
@@ -47,7 +70,8 @@
   }
 
   .latest-news-text-container h3 {
-    line-height: 20px;
+    line-height: 18px;
+    font-size: 14px;
   }
 
   .latest-news-container .ln-img {
@@ -57,8 +81,44 @@
   .funding-header ul {
     right: 9px;
     padding: 16px 0;
-    justify-content: flex-start;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .funding-header ul li {
+    line-height: 25px;
+  }
+
+  .funding-header ul li:nth-child(2) {
+    border: none;
+  }
+
+  .fundingRounds img {
+    width: 34%;
+  }
+
+  .fundingRounds h4 {
+    font-size: 16px;
+    padding: 0 5px 0 80px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fundingRounds ul li,
+  .fundingRounds ul li a {
+    font-size: 13px;
+  }
+
+  .fundigs-ending p a {
+    font-size: 12px;
+  }
+
+  .fundigs-ending small a {
+    font-size: 12px;
   }
 
   .articles-grid-container {
@@ -66,12 +126,20 @@
     grid-template-rows: repeat(4, 1fr);
   }
 
-  .articles header {
-    bottom: 58%;
+  .img-text .img-article-container {
+    padding-top: 65%;
   }
 
   .latest-sub-article .item-img {
     width: 25%;
+  }
+
+  .latest-deals-container {
+    margin-top: 40px;
+  }
+
+  .latest-deals-container h2 {
+    padding-bottom: 20px;
   }
 
   .latest-deals-grid {
@@ -80,6 +148,6 @@
   }
 
   .img-container {
-    height: 76%;
+    height: 65%;
   }
 }
