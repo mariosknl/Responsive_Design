@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .nav-mid .logo-top {
+    display: block;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-mid {
+    padding: 25px 20px;
+  }
+
+  .nav-mid ul {
+    left: 108px;
+    position: absolute;
+  }
+
+  .top-section-container .article2 .article2-text,
+  .top-section-container .article3 .article2-text {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+  }
+
+  .author2 {
+    left: 16px;
+    bottom: 10px;
+  }
+
+  .top-section-container .article1 .article-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+  }
+
+  .author {
+    left: 22px;
+    bottom: 15px;
+  }
+
+  .article1 .date,
+  .article1 .logo {
+    display: none;
+  }
+
+  main {
+    width: 96%;
+  }
+
+  .latest-news-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 21px;
+    margin-bottom: 55px;
+    height: 100vh;
+  }
+
+  .latest-news-title {
+    margin-top: 60px;
+  }
+
+  .latest-news-text-container h3 {
+    line-height: 18px;
+    font-size: 14px;
+  }
+
+  .latest-news-container .ln-img {
+    height: 65%;
+  }
+
+  .funding-list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .funding4 {
+    display: none;
+  }
+
+  .funding-header ul {
+    right: 9px;
+    padding: 16px 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .funding-header ul li {
+    line-height: 25px;
+  }
+
+  .fundigs-ending p a {
+    font-size: 12px;
+  }
+
+  .fundigs-ending small a {
+    font-size: 12px;
+  }
+
+  .fundingRounds ul li,
+  .fundingRounds ul li a {
+    font-size: 13px;
+  }
+
+  .funding-header ul li:nth-child(2) {
+    border: none;
+  }
+
+  .fundingRounds img {
+    width: 20%;
+  }
+
+  .fundingRounds h4 {
+    font-size: 16px;
+    padding: 0 5px 0 80px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .articles-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .img-text .img-article-container {
+    padding-top: 65%;
+  }
+
+  .latest-sub-article .item-img {
+    width: 25%;
+  }
+
+  .latest-deals-container {
+    margin-top: 40px;
+  }
+
+  .latest-deals-container h2 {
+    padding-bottom: 20px;
+  }
+
+  .latest-deals-grid {
+    height: 104vh;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .img-container {
+    height: 65%;
+  }
+}

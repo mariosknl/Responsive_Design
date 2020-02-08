@@ -1,0 +1,940 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-section {
+  display: none;
+}
+
+/* Navigation Bars */
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.nav-top {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 29%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 8px 20px;
+}
+
+.footer-social li {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.footer-links li {
+  margin: 0 6px;
+  font-weight: medium;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-mid ul li {
+  padding: 0 4px;
+}
+
+.funding-header ul li {
+  padding: 0 10px 0 10px;
+}
+
+.articles article ul li {
+  border-bottom: lightgray 1px solid;
+  padding-bottom: 10px;
+  list-style: disc;
+}
+
+.nav-top .left-list li,
+.nav-top .right-list li {
+  padding: 0 4px;
+}
+
+.nav-top .left-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-top .right-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-top a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-top #news {
+  color: white;
+}
+
+.nav-mid a {
+  color: rgb(170, 170, 170);
+}
+
+.deal-description a {
+  color: black;
+}
+
+.fundings-description h5 a {
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+}
+
+.fundings-description h6 a {
+  font-size: 12px;
+  color: gray;
+  font-weight: 300;
+}
+
+.fundigs-ending small a {
+  font-size: 12px;
+  color: gray;
+}
+
+.latest-deals-container h2 a {
+  color: #f42;
+  font-size: 26px;
+  position: relative;
+  bottom: 5px;
+  left: 0;
+}
+
+.latest-deals-container h6 a {
+  color: #f42;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: normal;
+}
+
+.footer-links li a {
+  color: #aaa;
+}
+
+.funding-header ul li a {
+  color: #f42;
+  font-size: 17px;
+}
+
+.fundingRounds ul li a {
+  font-size: 15px;
+  word-spacing: 4px;
+}
+
+.articles article ul li a {
+  color: #555;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.nav-top a:hover {
+  color: white;
+}
+
+.nav-mid ul {
+  display: flex;
+}
+
+.nav-mid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f0e9e9;
+  height: 48%;
+  width: 100%;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-mid .logo-top {
+  display: none;
+}
+
+#search {
+  position: absolute;
+  right: 0;
+  border-left: 1px solid lightgrey;
+  padding: 15px;
+  font-size: medium;
+}
+
+#menu {
+  display: none;
+}
+
+.nav-mid a:hover {
+  color: black;
+}
+
+/* End of Navigation Bars */
+
+/* Top Section Container */
+
+.top-section-container {
+  width: 98%;
+  height: 75vh;
+  margin: 5px auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Articles Position */
+
+.article1 {
+  grid-area: 1 / 1 / 3 / 2;
+  position: relative;
+  top: 9px;
+}
+
+.article2 {
+  position: relative;
+  top: 9px;
+}
+
+.article3 {
+  position: relative;
+  top: 9px;
+}
+
+/* Background Images for each article */
+
+.article1 .image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+  -moz-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+  box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+}
+
+.article2 .image2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Facial-Recognition-hed-2020-796x419.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+  -moz-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+  box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+}
+
+.article3 .image3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F10%2FApple-AirPods-Pro.jpg&signature=eeb60b2eb429f8a0afe01ba584eeebc9');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+  -moz-box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+  box-shadow: inset 19px -11px 22px 34px rgba(50, 50, 50, 0.44);
+}
+
+/* Logo */
+
+.article1 .logo {
+  width: 60%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+/* Text For each Article */
+
+/* Text Article1 */
+
+.top-section-container .article1 .article-text {
+  position: absolute;
+  width: 90%;
+  top: 78%;
+  left: 20px;
+}
+
+.article1 .article-text a {
+  color: #fff;
+}
+
+.article-heading {
+  font-size: 18px;
+}
+
+.article-content {
+  font-size: 38px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.author {
+  position: absolute;
+  left: 4px;
+  font-size: 12px;
+}
+
+.article1 .date {
+  color: #aaa;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+/* End of Article1 Text */
+
+/* Images of Articles */
+
+.img1-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/youtube-1200-516x270.png');
+}
+
+.img2-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/youtube-1200-516x270.png');
+}
+
+.img3-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/04/wii.jpg');
+}
+
+.img4-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-513x270.png');
+}
+
+.img5-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/newfakenews1200-516x270.png');
+}
+
+.img6-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/stellar-blockchain-down-cryptocurrency-decentralized-478x270.jpg');
+}
+
+.img7-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/header-image-tim-cook-Apple-financials-1-516x270.png');
+}
+
+.img8-top {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Untitled-design101-516x270.png');
+}
+
+/* End Images of Articles */
+
+/* Text Article2 & Article3 */
+
+.top-section-container .article2 .article2-text,
+.top-section-container .article3 .article2-text {
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  left: 20px;
+}
+
+.article2 .article2-text a,
+.article3 .article2-text a {
+  color: #fff;
+}
+
+.article2 .article2-text a:hover,
+.article3 .article3-text a:hover {
+  text-decoration: underline;
+}
+
+.article2-heading {
+  font-size: 18px;
+}
+
+.article2-content {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.author2 {
+  font-size: 12px;
+  position: absolute;
+  left: 3px;
+}
+
+/* End of Article2 & Article3 Text */
+
+/* Main Container */
+main {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* End of Main Container */
+
+/* Latest News Section */
+
+.latest-news-title {
+  color: #f42;
+  position: relative;
+  left: 1%;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.latest-news-container {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-template-rows: repeat(2, 50%);
+  gap: 13px;
+}
+
+/* Article Image Set Up */
+.latest-news-container .ln-img {
+  width: 100%;
+  height: 50%;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* End of Article Image Set Up  */
+
+/* Latest News Text Set Up */
+.latest-news-text-container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  line-height: 25px;
+}
+
+.latest-news-text-container h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.latest-news-text-container small {
+  font-size: 13px;
+  font-weight: 300;
+  color: #aaa;
+}
+
+/* End of Latest News Section */
+
+/* Latest Funding Title */
+
+.main-container #latest-funding-title {
+  font-size: 26px;
+  color: #f42;
+}
+
+/* End of Latest Funding Title */
+
+/* Latest Funding Rounds */
+
+.latest-funding-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.funding-header ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+}
+
+.funding-header ul li:nth-child(2) {
+  border-left: 1px solid #f42;
+  border-right: 1px solid #f42;
+}
+
+/* Funding List Container */
+
+.funding-list-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* End of Funding List Container */
+
+/* Funding List Set Up */
+
+.fundingRounds {
+  width: 100%;
+  background-color: lightgray;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fundingRounds img {
+  width: 22%;
+  margin: 10px 10px;
+  position: absolute;
+  z-index: 5;
+}
+
+.fundingRounds h4 {
+  background-color: #f42;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  line-height: 40px;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.fundings-description {
+  background-color: #ffece8;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0 10px 85px;
+  line-height: 20px;
+}
+
+.fundingRounds ul {
+  background-color: #fffaf9;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  line-height: 40px;
+}
+
+.fundigs-ending {
+  background-color: #fffaf9;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 15px;
+  line-height: 20px;
+  word-spacing: 2px;
+  border-top: 1px solid #f42;
+}
+
+.fundigs-ending p {
+  font-size: 14px;
+}
+
+/* End of Funding List Set Up */
+
+/* Start of Articles Section Container */
+
+.articles-container {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.articles-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* End of Articles Section Container  */
+
+/* Start of Articles Images */
+
+.img1-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png');
+}
+
+.img1-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Google-translate.png');
+}
+
+.img2-article {
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2');
+}
+
+.img2-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Apple-AirPods-Pro.jpg');
+}
+
+.img3-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/brain-1200x600.jpg');
+}
+
+.img3-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/ring-amazon-video-customer.jpg');
+}
+
+.img4-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png');
+}
+
+.img4-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/instagram-photoshop-hide-misinformation.jpg');
+}
+
+.img5-article {
+  background-image: url('https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a');
+}
+
+.img5-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Untitled-design44.png');
+}
+
+.img6-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/google-play-store-malware-joker-796x417.jpg');
+}
+
+.img6-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/stellar-blockchain-down-cryptocurrency-decentralized.jpg');
+}
+
+.img7-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg');
+}
+
+.img7-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Press-Conference-with-Eric-Esrailian-Alexis-Ohanian-Hakob-Arshakyan-Yervant-Zorian-and-Serj-Tankian-hed.jpg');
+}
+
+.img8-article {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg');
+}
+
+.img8-subArticle {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Snag_2267466a.png');
+}
+
+/* End of Articles Images */
+
+/* Articles Text Set up */
+
+.articles {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.articles h2 {
+  font-weight: bolder;
+  color: #f42;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.img-text {
+  position: relative;
+  width: 100%;
+}
+
+article .img-article-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding-top: 50%;
+  width: 100%;
+}
+
+.articles-grid-container .articles article {
+  position: relative;
+  height: 100%;
+}
+
+.img-text header {
+  padding: 10px 10px 5px 10px;
+  background:
+    transparent
+    url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.articles header h5 {
+  color: #fff;
+  font-size: 13px;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+.deal-description a h4 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.articles article header h4 {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 2px;
+}
+
+.articles article header small {
+  color: hsla(0, 0%, 100%, 0.6);
+  padding-bottom: 3px;
+  font-size: 12px;
+}
+
+.latest-sub-article {
+  margin: 2px 0;
+  background-color: rgba(255, 68, 34, 0.06);
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.latest-sub-article .item-img {
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: none;
+}
+
+.latest-sub-article .article-description {
+  float: left;
+  padding: 10px;
+  color: orangered;
+  width: 100%;
+}
+
+.article-description h6 {
+  font-weight: 500;
+  padding-bottom: 3px;
+  font-size: 13px;
+}
+
+.article-description p {
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.articles article ul {
+  color: orangered;
+  padding-left: 20px;
+}
+
+/* End of Article Text Set Up */
+
+/* Start of Latest Deals Section Container */
+
+.latest-deals-container {
+  width: 100%;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.latest-deals-grid {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* End of Latest Deals Section Container */
+
+.latest-deal {
+  position: relative;
+  max-width: 100%;
+}
+
+.img-container {
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  background-position: center;
+}
+
+/* Images for Latest Deals Section */
+.img1-deal {
+  background-image: url(https://cdnp0.stackassets.com/3d28a01310d47a9ece38eb1a189790944b8e512e/store/bd912e50369c037674603acf0ef1a582b658ef72662651d6eab3d7aa657e/sale_25558_primary_image.jpg);
+}
+
+.img2-deal {
+  background-image: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
+}
+
+.img3-deal {
+  background-image: url(https://cdnp0.stackassets.com/a875072fa31f35279ce85438b376249c54eca996/store/8534f1826bec31d741297d74ee8a30edc0f492f8f74cd08aa4ed0103d42a/sale_14523_primary_image.jpg);
+}
+
+.img4-deal {
+  background-image: url(https://cdnp0.stackassets.com/a006d74a4214b0eb32c6ce78b158f01b3d871514/store/9dda482d6249c0add53c47b9b22ade2e3d22916d41ee83c217d468265c6f/sale_25287_primary_image.jpg);
+}
+
+.img5-deal {
+  background-image: url(https://cdnp1.stackassets.com/b84071b94151b0a50465135f5b203e5839a98736/store/327a0734b985e095e3ec81f34dc15ab2cebbd59d9191662bbd25a329cc11/sale_25559_primary_image.jpg);
+}
+
+.img6-deal {
+  background-image: url(https://cdnp3.stackassets.com/ba7cb2479d7bb8b5a7fecebb6af74ad77f9f74fa/store/c350066a7652411d43ac5e6a9b3caf8c8aaec349093c09728483b211ca82/sale_19370_primary_image.jpg);
+}
+
+.img7-deal {
+  background-image: url(https://cdnp3.stackassets.com/421ab0b04c84801af8a4f51ece880298388bd127/store/16cea4d1381f08ca8c02de9dd2d0fabc10f1fdeae203d89b6f66092ce3e6/sale_25441_primary_image.jpg);
+}
+
+.img8-deal {
+  background-image: url(https://cdnp3.stackassets.com/a63f9a918b821c95e798a8a68ea959724b33b7f3/store/2730630ad405564dff3d69229e3fac86b328dee912982179d47815ed0e30/sale_22289_primary_image.jpg);
+}
+
+/* End of Images for Latest Deals Section */
+
+.deal-description {
+  word-wrap: break-word;
+  width: 100%;
+  position: relative;
+  padding-top: 12px;
+}
+
+.line-through {
+  font-size: 13px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.current-price {
+  font-size: 16px;
+  color: #555;
+  padding-left: 4px;
+}
+
+.more-container {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg');
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 5;
+  width: 80px;
+  height: 80px;
+}
+
+.discount {
+  transform: rotate(45deg);
+  position: relative;
+  top: 25px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* End of Latest Deals Section */
+
+/* Footer Section */
+
+.footer-page {
+  text-align: center;
+  position: relative;
+}
+
+.footer-top {
+  padding: 3em 0 2em;
+  background: #131313;
+}
+
+.wrapper-footer-top {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-social {
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  background: #333;
+  color: white;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding: 9px 0 0 2px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.footer-bottom {
+  padding: 3em 0;
+  background: black;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.wrapper-footer-bottom {
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tnw-logo {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+.wrapper-footer-bottom p b {
+  color: #f42;
+  font-weight: bold;
+}
+
+.sp-logo {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}

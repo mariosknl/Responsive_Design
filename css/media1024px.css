@@ -1,0 +1,157 @@
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* Navbar Section */
+
+  .yellow-nav {
+    display: none;
+  }
+
+  .nav-mid {
+    padding: 15px 20px;
+  }
+
+  /* Top Section Container */
+  .top-section-container .article1 .article-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+  }
+
+  .author {
+    left: 31px;
+    bottom: 15px;
+  }
+
+  .article-heading {
+    font-size: 14px;
+  }
+
+  .article-content {
+    font-size: 24px;
+  }
+
+  .top-section-container .article2 .article2-text,
+  .top-section-container .article3 .article2-text {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 25px;
+  }
+
+  .author2 {
+    left: 26px;
+    bottom: 10px;
+  }
+
+  .article2-heading {
+    font-size: 16px;
+  }
+
+  .article2-content {
+    font-size: 18px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .date {
+    display: none;
+  }
+
+  /* End of Top Section Container */
+
+  /* Main Container */
+  main {
+    width: 95%;
+  }
+
+  .latest-news-title {
+    margin-top: 40px;
+  }
+
+  /* End of Main Container */
+
+  /* Start of last funding Rounds */
+
+  .main-container #latest-funding-title {
+    margin-top: 50px;
+  }
+
+  .funding-header ul {
+    bottom: 0;
+    padding: 15px 0;
+    left: -9px;
+    justify-content: flex-start;
+  }
+
+  .fundingRounds h4 {
+    font-size: 14px;
+    padding-left: 85px;
+    text-align: left;
+  }
+
+  .fundings-description {
+    padding-right: 10px;
+  }
+
+  .fundingRounds ul li a {
+    font-size: 12px;
+  }
+
+  .fundigs-ending p {
+    font-size: 10px;
+  }
+
+  /* Articles Section */
+  .img-text .img-article-container {
+    background-size: 100% 100%;
+    padding-top: 65%;
+  }
+
+  .articles header h5 {
+    font-size: 10px;
+  }
+
+  .articles article header h4 {
+    font-size: 14px;
+  }
+
+  .articles article small {
+    font-size: 10px;
+  }
+
+  .latest-sub-article .item-img {
+    width: 35%;
+  }
+
+  .article-description h6 {
+    font-size: 14px;
+    padding-bottom: 2px;
+  }
+
+  .article-description p {
+    line-height: 13px;
+    font-weight: 500;
+  }
+
+  .latest-deals-container .latest-deals-grid {
+    height: 50vh;
+  }
+
+  .latest-deals-container h2 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .latest-deal .img-container {
+    height: 70%;
+  }
+}
