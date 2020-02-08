@@ -208,7 +208,6 @@
   }
 
   /* Funding List Container */
-  
   .funding-list-container {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr);
