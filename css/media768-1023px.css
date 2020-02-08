@@ -60,9 +60,10 @@
 
   .latest-news-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     gap: 21px;
     margin-bottom: 55px;
+    height: 100vh;
   }
 
   .latest-news-title {
@@ -76,6 +77,14 @@
 
   .latest-news-container .ln-img {
     height: 65%;
+  }
+
+  .funding-list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .funding4 {
+    display: none;
   }
 
   .funding-header ul {
@@ -109,7 +118,7 @@
   }
 
   .fundingRounds img {
-    width: 34%;
+    width: 20%;
   }
 
   .fundingRounds h4 {

@@ -163,6 +163,7 @@
 
   .latest-news-text-container h3 {
     line-height: 13px;
+    font-size: 14px;
   }
 
   .ln {
@@ -208,15 +209,19 @@
 
   .funding-list-container {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+  }
+
+  .funding4 {
+    display: none;
   }
 
   /* End Funding List Container */
 
   /* Funding List Container Img */
   .fundingRounds img {
-    width: 8%;
+    width: 9%;
   }
 
   .fundigs-ending {

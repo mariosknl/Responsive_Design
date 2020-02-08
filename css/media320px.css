@@ -208,17 +208,22 @@
   }
 
   /* Funding List Container */
+  
   .funding-list-container {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+  }
+
+  .funding4 {
+    display: none;
   }
 
   /* End Funding List Container */
 
   /* Funding List Container Img */
   .fundingRounds img {
-    width: 19%;
+    width: 15%;
   }
 
   /* End of Funding List Container Img */
